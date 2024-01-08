@@ -1,0 +1,57 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+}
+
+/* Index */
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.title {
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#text,
+#censured,
+#submit {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* Result  */
+.result {
+    font-size: 25px;
+}
+
+.result div {
+    margin: 20px 0;
+}
+
+.result p {
+    margin: 20px 0;
+}

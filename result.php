@@ -5,22 +5,26 @@ $censured = $_GET["censured"];
 $text_censured = str_replace($censured, "***", $text);
 ?>
 <!-- / Variabili  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
+    <title>RESULT</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- / My CSS -->
 </head>
 
 <body>
-    <div class="result">
+    <div class="container result">
+        <div class="title">
+            <h1>Risultati</h1>
+        </div>
         <!-- paragrafo iniziale -->
         <div>
-            <h2>paragrafo iniziale: </h2>
+            <h2>Paragrafo iniziale: </h2>
             <p>
                 <?php
                 echo $text;
@@ -35,7 +39,7 @@ $text_censured = str_replace($censured, "***", $text);
         <!-- / paragrafo iniziale -->
         <!-- paragrafo censurato -->
         <div>
-            <h2>paragrafo censurato: </h2>
+            <h2>Paragrafo censurato: </h2>
             <p>
                 <?php
                 echo $text_censured;
